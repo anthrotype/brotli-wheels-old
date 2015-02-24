@@ -1,2 +1,2 @@
-# brotli-py-win
-Python extension for the Brotli compression libary precompiled for Windows
+# brotli-py-dist
+Python extension for the Brotli compression libary precompiled for Windows and OS X.
