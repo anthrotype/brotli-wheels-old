@@ -1,0 +1,12 @@
+language: python
+python:
+    - "2.7"
+    - "3.4"
+install:
+    - "git submodule update --init --recursive"
+    - "python setup.py bdist_wheel"
+    - "pip install --upgrade -v --no-index --find-links=$(pwd)/dist Brotli"
+script:
+    - "python setup.py test"
+after_success:
+    - coveralls
