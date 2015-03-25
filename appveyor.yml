@@ -39,6 +39,7 @@ init:
 
 install:
   - "powershell appveyor\\install.ps1"
+  - "git submodule update --init --recursive"
 
 build: off
 
