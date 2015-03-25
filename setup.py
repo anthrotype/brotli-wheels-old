@@ -4,6 +4,15 @@ from setuptools import Command
 import platform
 
 
+# force setuptools to use MS Visual Studio 2010 instead of 2008 on Python 2.x
+if platform.system() == 'Windows':
+    import distutils.msvc9compiler
+    orig_find_vcvarsall = distutils.msvc9compiler.find_vcvarsall
+    def patched_find_vcvarsall(version):
+        return orig_find_vcvarsall(version if version != 9.0 else 10.0)
+    distutils.msvc9compiler.find_vcvarsall = patched_find_vcvarsall
+
+
 class TestCommand(Command):
     user_options = []
 
