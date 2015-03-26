@@ -12,3 +12,12 @@ install:
 - pip install dist/*.whl
 script:
 - python setup.py test
+- "whl_file=$(echo *.whl)"
+deploy:
+  provider: releases
+  api_key: dabf8f304bfb5a8bcce0a955e2bd3ec90366fa71
+  file: $whl_file
+  skip_cleanup: true
+  on:
+    all_branches: true
+    tags: true
