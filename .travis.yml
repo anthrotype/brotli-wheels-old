@@ -6,8 +6,8 @@ env:
   - VERSION=3.4.3
 install:
 - source terryfy/travis_tools.sh
-- git submodule update --init --recursive
 - get_python_environment macpython $VERSION venv
+- pip install wheel
 - python setup.py bdist_wheel
 - pip install dist/*.whl
 script:
