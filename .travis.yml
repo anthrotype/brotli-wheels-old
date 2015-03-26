@@ -15,7 +15,8 @@ script:
 - "whl_file=$(echo *.whl)"
 deploy:
   provider: releases
-  api_key: dabf8f304bfb5a8bcce0a955e2bd3ec90366fa71
+  api_key:
+    secure: "Hb2KUpbeeyTVs3RfUKcbV0fXfAblkvlRejIQBMPPKKHJlW/m+i9ckD3rWim2fxFABpBmaNxWGCCob1cnPt27py2WiurvWehidumD0tzhybQ067Zvn58AaNWtd6IDHOqrxOweia3u5QuhEpaUvQQsX+s1QqfZ/EVL2I5B7nJE1C8="
   file: $whl_file
   skip_cleanup: true
   on:
