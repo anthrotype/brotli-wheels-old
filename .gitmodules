@@ -1,3 +1,6 @@
 [submodule "brotli"]
 	path = brotli
 	url = https://github.com/google/brotli.git
+[submodule "terryfy"]
+	path = terryfy
+	url = https://github.com/MacPython/terryfy.git
