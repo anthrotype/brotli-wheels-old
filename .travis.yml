@@ -12,7 +12,7 @@ install:
 - pip install dist/*.whl
 script:
 - python setup.py test
-- whl_file=$(echo *.whl)
+- "whl_file=$(echo *.whl)"
 deploy:
   provider: releases
   api_key:
