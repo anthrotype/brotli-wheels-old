@@ -12,11 +12,11 @@ install:
 - pip install dist/*.whl
 script:
 - python setup.py test
-- "whl_file=$(echo *.whl)"
+- whl_file=$(echo *.whl)
 deploy:
   provider: releases
   api_key:
-    secure: TaFmY+PSl4GzsWONsEOhNP+j3u62gxRmDdalZbkR1kedtnlfq8nKz3S2H8qYH1kO8AiADHxWD5Vsn6D4RV/avgmTt8Uqb71S5kXkK4wX2yTEIDmdj52MqCMQgWPoJNNr1N0FvZw1aDE38/Jkrw1gIBK5bz6LW1s7t7xqBhjlD7o=
+    secure: SP/ebqpZV/f9cj7chBrA9XomQ8hMAHjJ1i1lwkxGsFEel3TdlcB/mlSAvvb2m/UerXnNjSRTXNoyvXZWRGN4LhRqsPxu+TrOs9LYbu1QVeZEAxikEJNaFuA/MXNDaL5cMLN9Gzmu1dBRqaEAgnI8/7o+bqrZGQlJ826PXagk7AI=
   file: $whl_file
   skip_cleanup: true
   on:
