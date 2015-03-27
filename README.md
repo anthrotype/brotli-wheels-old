@@ -1,2 +1,2 @@
-# brotli-py-dist
-Python extension for the Brotli compression libary precompiled for Windows and OS X.
+# brotli-wheels
+This repository uses Travis CI and Appveyor to build Python wheel packages of Brotli for OSX and Windows.
