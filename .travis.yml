@@ -16,7 +16,7 @@ script:
 deploy:
   provider: releases
   api_key:
-    secure: "Hb2KUpbeeyTVs3RfUKcbV0fXfAblkvlRejIQBMPPKKHJlW/m+i9ckD3rWim2fxFABpBmaNxWGCCob1cnPt27py2WiurvWehidumD0tzhybQ067Zvn58AaNWtd6IDHOqrxOweia3u5QuhEpaUvQQsX+s1QqfZ/EVL2I5B7nJE1C8="
+    secure: TaFmY+PSl4GzsWONsEOhNP+j3u62gxRmDdalZbkR1kedtnlfq8nKz3S2H8qYH1kO8AiADHxWD5Vsn6D4RV/avgmTt8Uqb71S5kXkK4wX2yTEIDmdj52MqCMQgWPoJNNr1N0FvZw1aDE38/Jkrw1gIBK5bz6LW1s7t7xqBhjlD7o=
   file: $whl_file
   skip_cleanup: true
   on:
