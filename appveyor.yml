@@ -57,15 +57,6 @@ artifacts:
 #  - TODO: upload the content of dist/*.whl to a public wheelhouse
 
 deploy:
-  - provider: FTP
-    protocol: sftp
-    host: wf.daltonmaag.com
-    username: cosimolupo
-    password:
-      secure: xIMBfgZSBOCZ1FiSG/3NWg==
-    folder: /appveyor/brotli/
-    artifact:
-
   - provider: GitHub
     auth_token:
       secure: o3NRzdcpPCSFjd9Gtwj9zjXP0yPRAieP0S0d4I8BK6/Xbl31u+9EsSiE+AUX8e2H
